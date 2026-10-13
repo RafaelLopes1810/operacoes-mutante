@@ -1,0 +1,91 @@
+﻿20:39:39 (15084) INFO ProjectReader Found 1 of 25 file(s) to be mutated.
+20:39:39 (15084) INFO Instrumenter Instrumented 1 source file(s) with 213 mutant(s)
+20:39:39 (15084) INFO ConcurrencyTokenProvider Creating 11 test runner process(es).
+20:39:40 (15084) INFO BroadcastReporter Detected that current console does not support the "progress" reporter, downgrading to "progress-append-only" reporter
+20:39:40 (15084) INFO DryRunExecutor Starting initial test run (jest test runner with "perTest" coverage analysis). This may take a while.
+20:39:41 (15084) INFO DryRunExecutor Initial test run succeeded. Ran 72 tests in 0 seconds (net 18 ms, overhead 586 ms).
+
+All tests/operacoes.test.js
+  ✓ Suíte de Testes Fraca para 50 Operações Aritméticas 1. deve somar dois números positivos [line 15] (killed 3)
+  ✓ Suíte de Testes Fraca para 50 Operações Aritméticas 2. deve subtrair dois números positivos [line 16] (killed 2)
+  ✓ Suíte de Testes Fraca para 50 Operações Aritméticas 3. deve multiplicar dois números positivos [line 17] (killed 2)
+  ✓ Suíte de Testes Fraca para 50 Operações Aritméticas 4. deve dividir e lançar erro para divisão por zero [line 18] (killed 5)
+  ✓ Suíte de Testes Fraca para 50 Operações Aritméticas 5. deve calcular a potência com expoente positivo [line 22] (killed 1)
+  ✓ Suíte de Testes Fraca para 50 Operações Aritméticas 6. deve calcular a raiz quadrada de um quadrado perfeito [line 23] (killed 3)
+  ✓ Suíte de Testes Fraca para 50 Operações Aritméticas 7. deve retornar o resto da divisão [line 24] (killed 2)
+  ✓ Suíte de Testes Fraca para 50 Operações Aritméticas 8. deve calcular o fatorial de um número maior que 1 [line 25] (killed 10)
+  ✓ Suíte de Testes Fraca para 50 Operações Aritméticas 9. deve calcular a média de um array com múltiplos elementos [line 26] (killed 7)
+  ~ Suíte de Testes Fraca para 50 Operações Aritméticas 10. deve somar um array com múltiplos elementos [line 27] (covered 3)
+  ✓ Suíte de Testes Fraca para 50 Operações Aritméticas 11. deve encontrar o valor máximo em um array [line 30] (killed 4)
+  ✓ Suíte de Testes Fraca para 50 Operações Aritméticas 12. deve encontrar o valor mínimo em um array [line 31] (killed 4)
+  ✓ Suíte de Testes Fraca para 50 Operações Aritméticas 13. deve retornar o valor absoluto de um número negativo [line 32] (killed 1)
+  ✓ Suíte de Testes Fraca para 50 Operações Aritméticas 14. deve arredondar um número para cima [line 33] (killed 1)
+  ✓ Suíte de Testes Fraca para 50 Operações Aritméticas 15. deve retornar true para um número par [line 34] (killed 4)
+  ✓ Suíte de Testes Fraca para 50 Operações Aritméticas 16. deve retornar true para um número ímpar [line 35] (killed 3)
+  ✓ Suíte de Testes Fraca para 50 Operações Aritméticas 17. deve calcular uma porcentagem simples [line 36] (killed 3)
+  ✓ Suíte de Testes Fraca para 50 Operações Aritméticas 18. deve aumentar um valor em uma porcentagem [line 37] (killed 4)
+  ✓ Suíte de Testes Fraca para 50 Operações Aritméticas 19. deve diminuir um valor em uma porcentagem [line 38] (killed 4)
+  ✓ Suíte de Testes Fraca para 50 Operações Aritméticas 20. deve inverter o sinal de um número positivo [line 39] (killed 2)
+  ✓ Suíte de Testes Fraca para 50 Operações Aritméticas 21. deve calcular o seno de 0 [line 42] (killed 1)
+  ✓ Suíte de Testes Fraca para 50 Operações Aritméticas 22. deve calcular o cosseno de 0 [line 43] (killed 1)
+  ✓ Suíte de Testes Fraca para 50 Operações Aritméticas 23. deve calcular a tangente de 0 [line 44] (killed 1)
+  ✓ Suíte de Testes Fraca para 50 Operações Aritméticas 24. deve calcular o logaritmo natural de Euler [line 45] (killed 1)
+  ✓ Suíte de Testes Fraca para 50 Operações Aritméticas 25. deve calcular o logaritmo na base 10 [line 46] (killed 1)
+  ✓ Suíte de Testes Fraca para 50 Operações Aritméticas 26. deve arredondar para baixo [line 47] (killed 1)
+  ✓ Suíte de Testes Fraca para 50 Operações Aritméticas 27. deve arredondar para cima [line 48] (killed 1)
+  ✓ Suíte de Testes Fraca para 50 Operações Aritméticas 28. deve calcular a hipotenusa de um triângulo retângulo [line 49] (killed 2)
+  ✓ Suíte de Testes Fraca para 50 Operações Aritméticas 29. deve converter graus para radianos [line 50] (killed 3)
+  ✓ Suíte de Testes Fraca para 50 Operações Aritméticas 30. deve converter radianos para graus [line 51] (killed 3)
+  ✓ Suíte de Testes Fraca para 50 Operações Aritméticas 31. deve calcular o MDC de dois números [line 54] (killed 3)
+  ✓ Suíte de Testes Fraca para 50 Operações Aritméticas 32. deve calcular o MMC de dois números [line 55] (killed 3)
+  ✓ Suíte de Testes Fraca para 50 Operações Aritméticas 33. deve verificar que um número é primo [line 56] (killed 8)
+  ✓ Suíte de Testes Fraca para 50 Operações Aritméticas 34. deve calcular o 10º termo de Fibonacci [line 57] (killed 8)
+  ✓ Suíte de Testes Fraca para 50 Operações Aritméticas 35. deve calcular o produto de um array [line 58] (killed 4)
+  ✓ Suíte de Testes Fraca para 50 Operações Aritméticas 36. deve manter um valor dentro de um intervalo (clamp) [line 59] (killed 3)
+  ✓ Suíte de Testes Fraca para 50 Operações Aritméticas 37. deve verificar se um número é divisível por outro [line 60] (killed 4)
+  ✓ Suíte de Testes Fraca para 50 Operações Aritméticas 38. deve converter Celsius para Fahrenheit [line 61] (killed 2)
+  ✓ Suíte de Testes Fraca para 50 Operações Aritméticas 39. deve converter Fahrenheit para Celsius [line 62] (killed 2)
+  ✓ Suíte de Testes Fraca para 50 Operações Aritméticas 40. deve calcular o inverso de um número [line 63] (killed 4)
+  ✓ Suíte de Testes Fraca para 50 Operações Aritméticas 41. deve calcular a área de um círculo [line 66] (killed 2)
+  ✓ Suíte de Testes Fraca para 50 Operações Aritméticas 42. deve calcular a área de um retângulo [line 67] (killed 2)
+  ✓ Suíte de Testes Fraca para 50 Operações Aritméticas 43. deve calcular o perímetro de um retângulo [line 68] (killed 3)
+  ✓ Suíte de Testes Fraca para 50 Operações Aritméticas 44. deve verificar se um número é maior que outro [line 69] (killed 3)
+  ✓ Suíte de Testes Fraca para 50 Operações Aritméticas 45. deve verificar se um número é menor que outro [line 70] (killed 3)
+  ✓ Suíte de Testes Fraca para 50 Operações Aritméticas 46. deve verificar se dois números são iguais [line 71] (killed 3)
+  ✓ Suíte de Testes Fraca para 50 Operações Aritméticas 47. deve calcular a mediana de um array ímpar e ordenado [line 72] (killed 7)
+  ✓ Suíte de Testes Fraca para 50 Operações Aritméticas 48. deve calcular o dobro de um número [line 73] (killed 2)
+  ✓ Suíte de Testes Fraca para 50 Operações Aritméticas 49. deve calcular o triplo de um número [line 74] (killed 2)
+  ✓ Suíte de Testes Fraca para 50 Operações Aritméticas 50. deve calcular a metade de um número [line 75] (killed 2)
+  ✓ raizQuadrada deve aceitar zero e rejeitar negativos com a mensagem exata [line 79] (killed 3)
+  ✓ divisao deve informar exatamente a causa da divisão por zero [line 89] (killed 1)
+  ✓ fatorial deve cobrir as fronteiras zero, um e o erro para negativo [line 96] (killed 3)
+  ✓ mediaArray deve retornar zero para um array vazio [line 107] (killed 1)
+  ✓ maximoArray deve rejeitar um array vazio com a mensagem exata [line 114] (killed 2)
+  ✓ minimoArray deve rejeitar um array vazio com a mensagem exata [line 121] (killed 2)
+  ✓ isPar deve identificar como falso um número ímpar [line 128] (killed 1)
+  ✓ isImpar deve identificar como falso um número par [line 135] (killed 2)
+  ✓ isPrimo deve tratar um e um composto como não primos [line 142] (killed 9)
+  ~ produtoArray deve retornar o elemento neutro para array vazio [line 150] (covered 2)
+  ✓ clamp deve limitar valores abaixo e acima do intervalo [line 157] (killed 2)
+  ~ clamp deve preservar valores nos limites do intervalo [line 163] (covered 5)
+  ✓ isDivisivel deve retornar falso quando há resto [line 171] (killed 1)
+  ✓ celsiusParaFahrenheit deve converter uma temperatura diferente de zero [line 178] (killed 2)
+  ✓ fahrenheitParaCelsius deve converter uma temperatura diferente do ponto de congelamento [line 185] (killed 2)
+  ✓ inverso deve rejeitar zero com a mensagem exata [line 192] (killed 2)
+  ✓ isMaiorQue deve retornar falso para valores menores e iguais [line 199] (killed 2)
+  ✓ isMenorQue deve retornar falso para valores maiores e iguais [line 207] (killed 2)
+  ✓ isEqual deve retornar falso para valores diferentes [line 215] (killed 1)
+  ✓ medianaArray deve ordenar uma entrada ímpar não ordenada antes de obter a mediana [line 222] (killed 3)
+  ✓ medianaArray deve calcular a média dos dois valores centrais em entrada par [line 227] (killed 6)
+  ✓ medianaArray deve rejeitar um array vazio com a mensagem exata [line 232] (killed 2)
+
+Ran 1.88 tests per mutant on average.
+--------------|------------------|----------|-----------|------------|----------|----------|
+              | % Mutation score |          |           |            |          |          |
+File          |  total | covered | # killed | # timeout | # survived | # no cov | # errors |
+--------------|--------|---------|----------|-----------|------------|----------|----------|
+All files     | 100.00 |  100.00 |      199 |         3 |          0 |        0 |        0 |
+ operacoes.js | 100.00 |  100.00 |      199 |         3 |          0 |        0 |        0 |
+--------------|--------|---------|----------|-----------|------------|----------|----------|
+20:39:46 (15084) INFO HtmlReporter Your report can be found at: file:///C:/Users/T-GAMER/Documents/GitHub/operacoes-mutante/reports/mutation/mutation.html
+20:39:46 (15084) INFO MutationTestExecutor Done in 7 seconds.

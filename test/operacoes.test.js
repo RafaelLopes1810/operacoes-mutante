@@ -74,3 +74,163 @@ describe('Suíte de Testes Fraca para 50 Operações Aritméticas', () => {
   test('49. deve calcular o triplo de um número', () => { expect(triplo(10)).toBe(30); });
   test('50. deve calcular a metade de um número', () => { expect(metade(20)).toBe(10); });
 });
+
+describe('raizQuadrada', () => {
+  test('deve aceitar zero e rejeitar negativos com a mensagem exata', () => {
+    // mata mutante: n < 0 -> n <= 0 e remoção da condição
+    expect(raizQuadrada(0)).toBe(0);
+    expect(() => raizQuadrada(-1)).toThrow(
+      new Error('Não é possível calcular a raiz quadrada de um número negativo.')
+    );
+  });
+});
+
+describe('divisao', () => {
+  test('deve informar exatamente a causa da divisão por zero', () => {
+    // mata mutante: StringLiteral da mensagem de erro
+    expect(() => divisao(5, 0)).toThrow(new Error('Divisão por zero não é permitida.'));
+  });
+});
+
+describe('fatorial', () => {
+  test('deve cobrir as fronteiras zero, um e o erro para negativo', () => {
+    // mata mutantes: n < 0, n === 0 || n === 1 e operadores lógicos
+    expect(fatorial(0)).toBe(1);
+    expect(fatorial(1)).toBe(1);
+    expect(() => fatorial(-1)).toThrow(
+      new Error('Fatorial não é definido para números negativos.')
+    );
+  });
+});
+
+describe('mediaArray', () => {
+  test('deve retornar zero para um array vazio', () => {
+    // mata mutante: remoção do retorno para array vazio
+    expect(mediaArray([])).toBe(0);
+  });
+});
+
+describe('maximoArray', () => {
+  test('deve rejeitar um array vazio com a mensagem exata', () => {
+    // mata mutante: remoção da condição de array vazio
+    expect(() => maximoArray([])).toThrow(new Error('Array vazio не possui valor máximo.'));
+  });
+});
+
+describe('minimoArray', () => {
+  test('deve rejeitar um array vazio com a mensagem exata', () => {
+    // mata mutante: remoção da condição de array vazio
+    expect(() => minimoArray([])).toThrow(new Error('Array vazio не possui valor mínimo.'));
+  });
+});
+
+describe('isPar', () => {
+  test('deve identificar como falso um número ímpar', () => {
+    // mata mutante: substituição da expressão por true
+    expect(isPar(3)).toBe(false);
+  });
+});
+
+describe('isImpar', () => {
+  test('deve identificar como falso um número par', () => {
+    // mata mutantes: substituição por true e troca de % por *
+    expect(isImpar(2)).toBe(false);
+  });
+});
+
+describe('isPrimo', () => {
+  test('deve tratar um e um composto como não primos', () => {
+    // mata mutantes: limite <= 1, remoção do laço e da verificação de divisor
+    expect(isPrimo(1)).toBe(false);
+    expect(isPrimo(4)).toBe(false);
+  });
+});
+
+describe('produtoArray', () => {
+  test('deve retornar o elemento neutro para array vazio', () => {
+    // mata mutante: remoção do retorno para array vazio
+    expect(produtoArray([])).toBe(1);
+  });
+});
+
+describe('clamp', () => {
+  test('deve limitar valores abaixo e acima do intervalo', () => {
+    // mata mutantes: remoção das condições de limite
+    expect(clamp(-1, 0, 10)).toBe(0);
+    expect(clamp(11, 0, 10)).toBe(10);
+  });
+
+  test('deve preservar valores nos limites do intervalo', () => {
+    // As trocas < por <= e > por >= são equivalentes para os valores retornados.
+    expect(clamp(0, 0, 10)).toBe(0);
+    expect(clamp(10, 0, 10)).toBe(10);
+  });
+});
+
+describe('isDivisivel', () => {
+  test('deve retornar falso quando há resto', () => {
+    // mata mutante: substituição da condição por true
+    expect(isDivisivel(10, 3)).toBe(false);
+  });
+});
+
+describe('celsiusParaFahrenheit', () => {
+  test('deve converter uma temperatura diferente de zero', () => {
+    // mata mutantes: trocas aritméticas na conversão
+    expect(celsiusParaFahrenheit(10)).toBe(50);
+  });
+});
+
+describe('fahrenheitParaCelsius', () => {
+  test('deve converter uma temperatura diferente do ponto de congelamento', () => {
+    // mata mutantes: trocas aritméticas na conversão
+    expect(fahrenheitParaCelsius(50)).toBe(10);
+  });
+});
+
+describe('inverso', () => {
+  test('deve rejeitar zero com a mensagem exata', () => {
+    // mata mutante: remoção da condição de erro
+    expect(() => inverso(0)).toThrow(new Error('Não é possível inverter o número zero.'));
+  });
+});
+
+describe('isMaiorQue', () => {
+  test('deve retornar falso para valores menores e iguais', () => {
+    // mata mutantes: substituição por true e troca > por >=
+    expect(isMaiorQue(4, 5)).toBe(false);
+    expect(isMaiorQue(5, 5)).toBe(false);
+  });
+});
+
+describe('isMenorQue', () => {
+  test('deve retornar falso para valores maiores e iguais', () => {
+    // mata mutantes: substituição por true e troca < por <=
+    expect(isMenorQue(6, 5)).toBe(false);
+    expect(isMenorQue(5, 5)).toBe(false);
+  });
+});
+
+describe('isEqual', () => {
+  test('deve retornar falso para valores diferentes', () => {
+    // mata mutante: substituição da comparação por true
+    expect(isEqual(7, 8)).toBe(false);
+  });
+});
+
+describe('medianaArray', () => {
+  test('deve ordenar uma entrada ímpar não ordenada antes de obter a mediana', () => {
+    // mata mutantes: remoção de sort e alterações no comparador
+    expect(medianaArray([10, -1, 2])).toBe(2);
+  });
+
+  test('deve calcular a média dos dois valores centrais em entrada par', () => {
+    // mata mutantes: remoção/alteração do ramo para comprimento par
+    expect(medianaArray([4, 1, 3, 2])).toBe(2.5);
+  });
+
+  test('deve rejeitar um array vazio com a mensagem exata', () => {
+    // mata mutante: remoção da condição de array vazio
+    expect(() => medianaArray([])).toThrow(new Error('Array vazio не possui mediana.'));
+  });
+});
